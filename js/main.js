@@ -15,7 +15,7 @@ $('#btnUp').click(function (){
     $('html,body').animate({scrollTop:0},2000)
 })
 
-$("a[href^='#']").click(function(e){
+$(".nav-item a[href^='#']").click(function(e){
     $(e.target).css('border-bottom' ,'solid 3px #ce1212')
     $(e.target).parent().siblings().children().css('border-bottom' ,'none')
     let linkHref= $(e.target).attr('href')
